@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    background-color: black;
+}
+
+.container{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    top: 0;
+    position: sticky;
+    padding: 5% 0 2%;
+    width: 30%;
+    height: auto;
+    background: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 40px;
+}
+.main img{
+    /* background-color: yellow; */
+    width: 40%;
+}
+h2{
+    margin-top: 40px;
+}
+.seamless{
+    margin-top: 15px;
+    text-align: center;
+}
+.form1{
+    margin-top: 10px;
+    /* background-color: rgb(221, 221, 178); */
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.in{
+    width: 100%;
+    position: relative;
+    /* background: blue; */
+    height: auto;
+}
+i{
+    position: absolute;
+    top: 60%;
+    left: 4%;
+}
+.inputPerson, .inputEmail, .inputPhone, .inputPassword{
+    height: 60px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(197, 193, 193);
+    padding-left: 15%;
+    width: 84%;
+}
+.inputPerson::placeholder, .inputEmail::placeholder, .inputPhone::placeholder, .inputPassword::placeholder{
+    color: black;
+    font-size: large;
+}
+.inputPerson::before{
+    content: "\1F464";
+    font-size: 16px;
+    position: absolute;
+    color: black;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.submit{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100%;
+    margin-top: 20px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: large;
+    text-align: center;
+}
+.create{
+    margin-top: 20px;
+}
+.create a{
+    text-decoration: none;
+    color: rgb(212, 38, 38);
+}
+
+@media (max-width:768px){
+    .main{
+        width: 90%;
+    }
+}
